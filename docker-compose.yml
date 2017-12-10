@@ -1,0 +1,10 @@
+version: '2'
+services:
+  api:
+    build: .
+    #image: php-swoole
+    volumes:
+      - .:/usr/src/myapp
+    ports:
+      - 9501:9501
+    restart: always
